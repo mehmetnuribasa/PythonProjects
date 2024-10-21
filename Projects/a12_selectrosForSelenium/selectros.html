@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header {       /* # -> for id */
+            font-size: 45px;
+            color: red;
+        }
+
+        .course h2 {       /* . -> for class */
+            color: aqua;
+        }
+
+        .course.angular {
+            background-color: blueviolet;
+        }
+
+        #username {
+            /* padding: 10px; */
+            border: 1px solid rebeccapurple;
+        }
+
+        /* input {
+            padding: 30px;
+        } */
+
+        input[type= "text"] {
+            padding: 30px;
+        }
+        input[type= "password"] {
+            padding: 20px;
+        }
+
+        #submit {
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="container">
+        <h1 id="header">
+            Courses
+        </h1>
+        <hr>    <!-- line -->
+
+        <div class="course python">
+            <h2>Python Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium.</p>      <!-- explanation part (lorem 10-> cerates random sntence with 10 words)-->
+        </div>
+
+        <div class="course angular">
+            <h2>Angular Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium.</p>      <!-- explanation part (lorem 10-> cerates random sntence with 10 words)-->
+        </div>
+
+        <div class="course javascript">
+            <h2>Javascript Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, laudantium.</p>      <!-- explanation part (lorem 10-> cerates random sntence with 10 words)-->
+        </div>
+
+
+        <div>
+            <form>
+                Username: <input type="text" name="username" id="username"><br>   <!-- br -> goes down one line like \n -->
+                Password: <input type="password" name="password" id="password"><br>
+                <input type="submit" value="Login" id="submit">
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
