@@ -1,10 +1,11 @@
 import requests
 import json
+from config import API_TOKEN
 
 class FilmArchives:
     def __init__(self):
         self.url = "https://api.themoviedb.org/3/"
-        self.token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNTRkNjQ0MzM4NTI2MTNiMjNhMDk1NWFhNjkzODRmYiIsIm5iZiI6MTcyMDk1NjU4OC4wODM4LCJzdWIiOiI2NjkzYjQ4N2Q3N2Q0MjY5Yzg1ZjMyODAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.tJDn-mWf4lQzb3ZFsMy8M0Q0IzqYJ4Ua4KFTkvVFkQ0"
+        self.token = API_TOKEN
 
     def mostPopular(self):
         url = f"{self.url}movie/popular?language=en-US&page=1"
